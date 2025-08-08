@@ -1,0 +1,59 @@
+{
+  "name": "default-agent",
+  "version": "1.0.0",
+  "description": "Default agent configuration",
+  "mcpServers": {
+    "awslabs.aws-diagram-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-diagram-mcp-server"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    }
+  },
+  "tools": [
+    "@awslabs.aws-diagram-mcp-server",
+    "fsRead",
+    "fsWrite",
+    "fsReplace",
+    "listDirectory",
+    "fileSearch",
+    "executeBash",
+    "codeReview",
+    "displayFindings"
+  ],
+  "allowedTools": [
+    "fsRead",
+    "fsWrite",
+    "fsReplace",
+    "listDirectory",
+    "fileSearch",
+    "codeReview",
+    "displayFindings"
+  ],
+  "toolsSettings": {
+    "execute_bash": {
+      "alwaysAllow": [
+        {
+          "preset": "readOnly"
+        }
+      ]
+    },
+    "use_aws": {
+      "alwaysAllow": [
+        {
+          "preset": "readOnly"
+        }
+      ]
+    }
+  },
+  "includedFiles": [
+    "AmazonQ.md",
+    "README.md",
+    ".amazonq/rules/**/*.md"
+  ],
+  "resources": [],
+  "promptHooks": []
+}

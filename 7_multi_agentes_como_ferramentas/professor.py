@@ -5,7 +5,7 @@
 Um agente Strands especializado que atua como orquestrador para utilizar sub-agentes
 e ferramentas à sua disposição para responder a consultas do usuário.
 
-Este exemplo usa um padrão de arquitetura chamado Agents as Tools.
+Este exemplo usa um padrão de arquitetura chamado "Agents as Tools".
 
 Este padrão oferece várias vantagens:
 

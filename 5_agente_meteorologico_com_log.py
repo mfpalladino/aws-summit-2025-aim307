@@ -91,7 +91,7 @@ def main():
         system_prompt=SYSTEM_PROMPT,
         tools=[http_request, shell, current_time])
     
-    agent("Qual a temperatura em São Paulo (capital) agora?")
+    agent("Qual a temperatura em João Pessoa agora?")
 
 if __name__ == "__main__":
     main()

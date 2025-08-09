@@ -3,7 +3,8 @@
 Sistema de Desenvolvimento Colaborativo de Produtos com Multi-Agentes
 
 Este módulo implementa um sistema de desenvolvimento de produtos que utiliza múltiplos agentes
-especializados trabalhando em colaboração peer-to-peer para criar planos abrangentes de desenvolvimento.
+especializados trabalhando em colaboração peer-to-peer para criar planos abrangentes de 
+desenvolvimento.
 
 Componentes Principais:
 - Agent Coordinator: Coordena uma equipe de especialistas usando a ferramenta swarm
@@ -41,9 +42,11 @@ Casos de Uso do Mundo Real:
 from strands import Agent
 from strands_tools import swarm
 
-SYSTEM_PROMPT = """Você é um coordenador de desenvolvimento de produtos que facilita o desenvolvimento colaborativo de produtos usando grupos de agentes especializados (swarms).
+SYSTEM_PROMPT = """Você é um coordenador de desenvolvimento de produtos que facilita o 
+    desenvolvimento colaborativo de produtos usando grupos de agentes especializados (swarms).
     
-    Use a ferramenta swarm para criar equipes de agentes especializados que trabalham juntos em tarefas de desenvolvimento de produtos.
+    Use a ferramenta swarm para criar equipes de agentes especializados que trabalham 
+    juntos em tarefas de desenvolvimento de produtos.
     
     Foque em:
     - Princípios de design centrado no usuário
@@ -59,7 +62,9 @@ product_swarm_coordinator = Agent(
     system_prompt=SYSTEM_PROMPT
 )
 
-def collaborative_product_development(product_idea: str, target_users: str, platform: str = "aplicação web") -> str:
+def collaborative_product_development(product_idea: str, 
+                                      target_users: str, 
+                                      platform: str = "aplicação web") -> str:
     """Desenvolve um conceito de produto colaborativamente usando uma equipe de especialistas (swarm).
     
     Args:
@@ -71,7 +76,8 @@ def collaborative_product_development(product_idea: str, target_users: str, plat
         Plano abrangente de desenvolvimento de produto
     """
     swarm_request = f"""
-    Crie uma equipe de três especialistas em desenvolvimento de produtos para desenvolver colaborativamente: {product_idea}
+    Crie uma equipe de três especialistas em desenvolvimento de produtos para desenvolver 
+    colaborativamente: {product_idea}
     Usuários-alvo: {target_users}
     Plataforma: {platform}
     
@@ -125,7 +131,9 @@ def collaborative_product_development(product_idea: str, target_users: str, plat
 print("✅ Coordenador de equipe de desenvolvimento de produto pronto!")
 
 # Teste da equipe de desenvolvimento de produto
-product_idea = "Um aplicativo inteligente de gerenciamento de tarefas que usa IA para priorizar tarefas e sugerir cronogramas de trabalho otimizados"
+product_idea = """Um aplicativo inteligente de gerenciamento de tarefas que usa 
+IA para priorizar tarefas e sugerir cronogramas de trabalho otimizados"""
+
 target_users = "profissionais ocupados e trabalhadores remotos"
 platform = "aplicação mobile (iOS e Android)"
 

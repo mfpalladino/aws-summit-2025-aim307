@@ -70,7 +70,8 @@ from generalista import general_assistant
 
 # Define a focused system prompt for file operations
 TEACHER_SYSTEM_PROMPT = """
-Você é o TeachAssist, um sofisticado orquestrador educacional projetado para coordenar suporte educacional em várias disciplinas. Seu papel é:
+Você é o TeachAssist, um sofisticado orquestrador educacional projetado para coordenar 
+suporte educacional em várias disciplinas. Seu papel é:
 
 1. Analisar as consultas dos alunos e determinar o agente especializado mais apropriado para lidar com elas:
    - Agente de Matemática: Para cálculos matemáticos, problemas e conceitos
@@ -98,6 +99,7 @@ Sempre confirme sua compreensão antes de encaminhar para garantir assistência 
 
 bedrock_model = BedrockModel(
     model_id="us.anthropic.claude-3-7-sonnet-20250219-v1:0")
+
 teacher_agent = Agent(
     system_prompt=TEACHER_SYSTEM_PROMPT,
     model=bedrock_model,

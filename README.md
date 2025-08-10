@@ -1,5 +1,13 @@
 # AIM307 - AWS Summit São Paulo 2025
 
+<div align="center">
+  <img src="images/bit.ly_aws-summit-sp-aim307.png" alt="QR Code para acesso ao repositório" width="300">
+  <br>
+  <em>Escaneie o QR Code para acessar este repositório</em>
+</div>
+
+---
+
 Este repositório contém os materiais e recursos para a sessão AIM307 "Aproveitando o poder da arquitetura de Agentic AI" apresentada durante o AWS Summit São Paulo 2025.
 
 ## 📋 Pré-requisitos

@@ -208,9 +208,9 @@ ConnectionError: Failed to connect to Ollama
 ## 📚 Recursos Adicionais
 
 - [Documentação Amazon Bedrock](https://docs.aws.amazon.com/bedrock/)
-- [Strands Agents Framework](https://github.com/strands-ai/strands-agents)
+- [Strands Agents Framework](https://strandsagents.com/0.1.x/documentation/docs/user-guide/quickstart/)
 - [OpenWeatherMap API](https://openweathermap.org/api)
-- [Ollama Documentation](https://ollama.ai/docs)
+- [Ollama Documentation](https://ollama.com/)
 
 ## 🤝 Contribuição
 
